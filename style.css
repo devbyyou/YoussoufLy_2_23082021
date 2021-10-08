@@ -133,4 +133,33 @@ h1, h2 {
 /*************************************************** Header *****************************************************/
 
 
+header {
 
+  margin-left:50px;
+  margin-right:50px;
+
+}
+
+
+#navigation {
+  display : flex;
+  flex-wrap: wrap;
+  margin-left: 2px;
+
+}
+
+
+#bloc_logo {
+  flex:2px;
+  min-width:122px;
+  margin-top: 47px;
+}
+
+#bloc_logo img {
+    margin-left:2px;
+    width:97px
+}
+
+#navigation ul {
+  
+}
