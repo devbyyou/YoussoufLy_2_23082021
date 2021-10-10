@@ -92,7 +92,7 @@ h1, h2 {
 
 #navigation nav a:hover {
   padding-top: 48px;
-  border-top: 2px solid #0065fc;
+  border-top: 6px solid #0065fc;
   color: #0065fc;}
 
 
@@ -161,5 +161,39 @@ header {
 }
 
 #navigation ul {
-  
+
+      width:300px;
+      display:flex;
+      justify-content:center;
+
 }
+
+#navigation li {
+
+ width: 50%;
+
+}
+
+#navigation nav a {
+        display:inline-block;
+        text-align:center;
+        width:100%;
+        padding-top:50px;
+        
+}
+
+
+#inscrire {
+    text-align:center;
+    padding: 50px 25px 0px 25px;
+}
+
+#presentation {
+    margin-top:37px;
+}
+
+#presentation h1, 
+#presentation p {
+  margin-top: 7px;
+}
+
