@@ -92,7 +92,7 @@ h1, h2 {
 
 #navigation nav a:hover {
   padding-top: 48px;
-  border-top: 6px solid #0065fc;
+  border-top: 3px solid #0065fc;
   color: #0065fc;}
 
 
@@ -570,6 +570,103 @@ header {
   }
 
 
+
+/* *******************************************  media query ******************************************* */
+/*responsive intermediaire pour rendre plus jolie, quand on reduit en desktop*/
+@media all and (max-width: 1070px) {
+  /* ----------------- hebergements_populaires -----------------*/
+  #popular_heberments {
+    /*aside*/
+    width: 100%;
+  }
+  #liste_hebergement_populaires {
+    justify-content: center;
+  }
+  .popular_hebergement_vignettes{
+    height: 145px;
+    width: 80%;
+  }
+  /* ----------------- hebergements -----------------*/
+  #accommodation {
+    /*article*/
+    width: 100%;
+  }
+  #accommodation_list {
+    /*conteneur de l'article hebergement et aside populaires*/
+    flex-direction: column;
+  }
+  .flex-item_hebergements:nth-child(2) {
+    /* remonte populaire en 1er */
+    order: 1;
+  }
+  .flex-item_hebergements:nth-child(1) {
+    /* met inscrire en 2 eme */
+    order: 2;
+  }
+}
+/* ****************** mode tablettes ******************************************* */
+@media all and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+  header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .pages_margin_left_right {
+    /* enleve les marges du bloc_section hebergements et activités */
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* ----------------- filtres ----------------- */
+  #filtres #filtres_label {
+    width: 100%;
+  }
+  /* ----------------- activites ----------------- */
+  #activities{ 
+    margin: 20px 35px 0px 35px;
+  }
+  #list_activities {
+    /*grille d'activitées*/
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 200px);
+  }
+  .item_grid-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item_grid-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item_grid-3 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .item_grid-4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .item_grid-5 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item_grid-6 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  /* ----------------- footer ----------------- */
+  footer {
+    margin-top: 20px;
+  }
+  #footer_site {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  #footer_site {
+    column-gap: 5%;
+  }
+}
   /* ****************** mode portable ******************************************* */
 @media all and (max-width: 600px) {
   /* ajustement du header*/
@@ -640,7 +737,7 @@ header {
     width: 100%;
   }
   /* ----------------- hebergements ----------------- */
-  #hebergements h2 {
+  #accommodation h2 {
     /*titre hebergements */
     margin-left: 20px;
     margin-right: 20px;
